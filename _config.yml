@@ -1,0 +1,8 @@
+baseurl: '/earth-obs-day'
+permalink: pretty
+exclude: [src, CNAME]
+markdown: rdiscount
+title: Earth Observation Day
+hashtag: jekyll-event
+email: jekyll-event@email.org
+twitter: jekyll-event-account
