@@ -14,9 +14,9 @@ title: Events
 <div class='limiter pad4y clearfix'>
 
 {% for item in site.categories['event'] reversed %}
-  {% if curdate != item.date | date: "%m-%d-%Y" %}
-  {% assign curdate = item.date | date: "%m-%d-%Y" %}
-
+  {% assign itemdate = item.date | date: "%m-%d-%Y" %}
+  {% if curdate != itemdate %}
+  {% assign curdate = itemdate %}
   <div class='pad2y {% unless forloop.index == 1 %}keyline-top{% endunless %}'>
     <div class='limiter'>
       <div class='col12 quiet space-bottom1'>
