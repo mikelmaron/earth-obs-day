@@ -9,7 +9,7 @@ twitter:
 organization: California University of PA
 permalink: '/event/pennsylvaniaview/'
 category: event
-lat: 41.74272
-lon: -111.80904
+lat: 40.0646
+lon: -79.8838
 ---
 

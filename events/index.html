@@ -14,16 +14,20 @@ title: Events
 <div class='limiter pad4y clearfix'>
 
 {% for item in site.categories['event'] reversed %}
+  {% if curdate != item.date | date: "%m-%d-%Y" %}
+  {% assign curdate = item.date | date: "%m-%d-%Y" %}
 
-<!--  <div class='pad2y {% unless forloop.index == 1 %}keyline-top{% endunless %}'>
+  <div class='pad2y {% unless forloop.index == 1 %}keyline-top{% endunless %}'>
     <div class='limiter'>
       <div class='col12 quiet space-bottom1'>
         <h3 class='col11 pad2x'>
-          {{date.name}}
+          {{ item.date | date: "%m-%d-%Y" }}
         </h3>
       </div>
-      <div class='col12 pad1y'>
--->
+    </div>
+  </div>
+  {% endif %}
+
           <div class='col12 clearfix {% if item.highlight == true %}highlight{% endif %}'>
             <div class='col12 pad2x'>
               <div class='headline clearfix space-bottom1'>
@@ -32,7 +36,7 @@ title: Events
                     {{item.title}}
                   <!-- </a> -->
                 </h2>
-                <div class='text-right space-bottom1'>{{item.date | date: "%m-%d-%Y" }}, {{item.time}}</div>
+                <div class='text-right space-bottom1'>{{item.time}}</div>
                 <div class='text-right quiet'>{{item.location}}</div>
               </div>
               <div class='prose schedule space-bottom2'>

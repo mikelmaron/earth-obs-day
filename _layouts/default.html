@@ -42,8 +42,10 @@
 
 <nav class='pad2 fill-red site-navigation center space'>
   <a class='strong {% if page.url == "{{site.baseurl}}/index.html" or page.url == "{{site.baseurl}}/" %}active{% endif %}' href='{{site.baseurl}}/'>Home</a>
+<!--
   <a class='strong {% if page.url contains "page1" %}active{% endif %}' href='{{site.baseurl}}/page1/'>Page 1</a>
   <a class='strong {% if page.url contains "page2" %}active{% endif %}' href='{{site.baseurl}}/page2/'>Page 2</a>
+-->
   <a class='strong {% if page.url contains "events" %}active{% endif %}' href='{{site.baseurl}}/events/'>Events</a>
   <a href='https://twitter.com/search?q=%23{{site.hashtag}}&src=typd' target='_blank' class='hide-mobile icon twitter inline small strong dark'>#{{site.hashtag}}</a>
 </nav>
@@ -87,7 +89,7 @@
   <div class='fill-darken3 pad2y col12'>
     <div class='limiter'>
       <p class='small hide-mobile'>
-        <a href="{{site.baseurl}}/codeofconduct/">Code of Conduct</a> | <a href='{{site.baseurl}}'>{{site.title}}</a> | <a href='https://twitter.com/search?q=%23{{site.hashtag}}&src=typd' target='_blank'>#{{site.hashtag}}</a><!-- | Photo credits: Photo Credits-->
+       <a href='{{site.baseurl}}'>{{site.title}}</a> | <a href='https://twitter.com/search?q=%23{{site.hashtag}}&src=typd' target='_blank'>#{{site.hashtag}}</a><!-- | Photo credits: Photo Credits-->
     </div>
   </div>
 </footer>
