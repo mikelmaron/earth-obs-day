@@ -1,12 +1,12 @@
 /* Base Overrides
 ---------------------------------------------- */
 .space > * { margin-right:10px; }
-.fill-blue { background-color:#31b2d0; }
+.fill-blue { background-color:#021039; }
 .fill-lightblue { background-color:#d7f0f6; }
 .fill-dark { background-color:#202020; }
 .fill-brown { background-color:#d7a64a; }
 .fill-green { background-color:#8cc250; }
-.fill-red { background-color:#d73f3f; }
+.fill-red { background-color:#820B34; }
 
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Kreon', serif;
@@ -443,5 +443,17 @@ h1.ready {
 }
 
 .participating {
-  height: 60px;
+ width: 250px;
+}
+
+.box {
+padding: 20px;
+margin: 0px;
+display: inline-block;
+border: 0px;
+}
+
+.holder {
+text-align: center;
+margin: auto;
 }

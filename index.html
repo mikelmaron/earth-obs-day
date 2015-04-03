@@ -3,28 +3,42 @@ layout: default
 title: ''
 ---
 
+
+<div class='col12 center space-bottom4 clearfix' style='padding-top:20px'>
+<h2>Mapping Projects</h2>
+
+<!-- http://jsfiddle.net/vrcQp/6/ -->
+
+<div class="holder">
+{% for post in site.categories['project'] %}
+      <div class='clearfix box '>
+        <a href='{{ site.baseurl }}{{ post.url }}' class='block'>
+          <img id='logo' src='{{site.baseurl}}{{ post.image }}' alt='MapOff' />
+        </a>
+      </div>
+{% endfor %}
+
+</div>
+</div>
+
 <section class='hide-mobile contain'>
   <div class='liner clearfix center fill-darken2 dark pin-top col12'>
     <h2 class='pad2'>
-      {{ site.title }}, Date to Date, Location.
+      {{ site.title }}, April 8, 2015
     </h2>
   </div>
-  <ul class='slider clearfix pin-top col12'>
-    <li><img src='img/splash/1024x500.png' title='Slide 1' /></li>
-	  <li><img src='img/splash/1024x500.png' title='Slide 2' /></li>
-  </ul>
 </section>
 
 <section class='show-mobile fill-light center pad2 space-bottom2'>
   <h2 class='space-bottom1'><a href='{{site.baseurl}}' target='_blank'>{{ site.title }}</a>!</h2>
-  <h3 class='quiet'>Jekyll Event Subtitle</h3>
+  <h3 class='quiet'>{{ site.subtitle }}</h3>
 </section>
 
 <section class='hide-mobile clearfix limiter col12'>
   <div class='pad4y'>
-    <h2>Jekyll Event Description</h2>
+    <h2>{{site.subtitle}}</h2>
   </div>
-
+<!--
   <div class='col6 margin3 space-bottom4'>
     <div class='col12 pad4 center keyline-all space-bottom4 clearfix'>
       <h3>Sign up for updates</h3>
@@ -33,9 +47,10 @@ title: ''
 
 
     </div>
-  </div>
-</section>
+  </div>-->
 
+</section>
+<!--
 <script>
 $(function(){
     $('.slider').bxSlider({
@@ -46,3 +61,4 @@ $(function(){
     });
 });
 </script>
+-->

@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+
+
+<div class='col12 center space-bottom4 clearfix' style='padding-top:20px'>
+
+
+<!-- http://jsfiddle.net/vrcQp/6/ -->
+
+<div class="holder"></div>
+
+</div>
+
+</div>
+
+<div class='col3 margin1'>
+
+<h2>{{ page.title }}</h2>
+
+
+<div class="leftside">
+
+{{page.description}}
+
+</div>
+
+
+<br>
+
+
+<a type="button" class="btn btn-primary" href='{{page.tracing_guide}}'>{{page.title}} Tracing Guide</a>
+
+<br><br><br>
+
+{% for item in page.project_id %}
+
+  {% for val in item %}
+
+    <a type="button" class="btn btn-primary" href='http://tasks.hotosm.org/project/{{ val[1] }}'>{{ val[0] }} Tasking Manager Link</a>
+
+  {% endfor %}
+
+{% endfor %}
+
+</div>
+
+<div class='col12 center ' style='padding-top:6px'><h3>Before and After Slider</h3></div>
+<iframe src="../hist_slider_{{page.title}}.html" width="55%" height="450" scrolling="no" style="float:left"></iframe>
+
+
