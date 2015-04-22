@@ -6,7 +6,7 @@ organization:
 permalink: '/project/kelud/'
 tags: [summit]
 category: project
-image: '/img/karangetang_button.png'
+image: '/img/kelud_button.png'
 tracing_guide: http://hotosm.github.io/tracing-guides/guide/Indo-Volcanoes.html
 project_id: 
   - Kelud: 425
