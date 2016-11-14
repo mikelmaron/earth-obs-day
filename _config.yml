@@ -1,7 +1,7 @@
 baseurl: '/earth-obs-day'
 permalink: pretty
 exclude: [src, CNAME]
-markdown: rdiscount
+#markdown: rdiscount
 title: Earth Observation Day
 hashtag: AmericaView
 email: mapgive@state.gov
